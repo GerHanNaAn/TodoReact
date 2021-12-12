@@ -1,0 +1,57 @@
+@import "@/styles/variables.scss";
+
+.todo {
+	padding: 105px 0 82px;
+
+	&__head {
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+
+		padding: 10px 15px;
+
+		background: $txMain;
+	}
+
+	&__sort {
+		margin-bottom: 6px;
+	}
+
+	&__input {
+	}
+
+	&__list {
+		display: grid;
+		gap: 4px;
+
+		animation: shaking 0.5s ease-in-out;
+	}
+
+	&__listItem {
+		&--added {
+			animation: shaking 0.5s ease-in-out;
+		}
+	}
+
+	&__info {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		left: 0;
+
+		padding: 10px 15px;
+
+		background: $txMain;
+	}
+
+	&__text {
+		font-size: 18px;
+		font-weight: 500;
+		color: $txMuted;
+	}
+
+	&__num {
+		color: $light;
+	}
+}

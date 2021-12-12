@@ -1,0 +1,56 @@
+@import "@/styles/variables.scss";
+
+.todoItem {
+	display: flex;
+	align-items: center;
+
+	&__text {
+		margin-right: auto;
+		padding: 7px 10px;
+
+		width: 100%;
+
+		background: $light;
+
+		font-family: "Roboto";
+		font-size: 21px;
+		font-weight: 600;
+		text-align: left;
+		color: $txMain;
+
+		transition: 0.3s;
+
+		&:hover {
+			box-shadow: inset 0px 0px 10px 1px #5c5c5c;
+		}
+
+		&--done {
+			background: $bgMain;
+
+			text-decoration: line-through;
+		}
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		padding: 3px;
+
+		width: 39px;
+		height: 39px;
+
+		background: #f02c2c;
+
+		font-size: 15px;
+		font-weight: 600;
+		color: $light;
+
+		transition: 0.3s;
+
+		&:hover {
+			background: #ff7676;
+		}
+	}
+}

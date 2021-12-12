@@ -1,0 +1,12 @@
+.todoSort {
+	display: flex;
+	flex-wrap: wrap;
+
+	&__btn {
+		margin-bottom: 4px;
+
+		&:not(:last-child) {
+			margin-right: 4px;
+		}
+	}
+}

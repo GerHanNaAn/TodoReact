@@ -1,0 +1,67 @@
+@import "@/styles/variables.scss";
+
+.todoInputText {
+	position: relative;
+
+	display: flex;
+
+	&__input {
+		padding: 8px;
+
+		width: 100%;
+
+		border: 1px solid transparent;
+
+		background: $light;
+
+		font-size: 17px;
+
+		transition: 0.3s;
+
+		&:focus {
+			border-color: #0575ff;
+
+			box-shadow: inset 0px 0px 7px -1px #0575ff;
+		}
+	}
+
+	&__error {
+		position: absolute;
+		top: 42px;
+		left: 0;
+
+		padding: 10px;
+
+		background: $light;
+
+		font-size: 14px;
+		font-weight: 600;
+		color: #f02c2c;
+
+		animation: shaking 0.5s ease-in-out;
+	}
+
+	&__btn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		padding: 3px;
+
+		width: 40px;
+		height: 40px;
+
+		background: #0f754e;
+
+		font-size: 18px;
+		font-weight: 900;
+		line-height: 20px;
+		color: $light;
+
+		transition: 0.3s;
+
+		&:hover {
+			background: #16aa77;
+		}
+	}
+}

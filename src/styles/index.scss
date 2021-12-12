@@ -1,0 +1,108 @@
+@import "./variables.scss";
+
+// reset
+* {
+	box-sizing: border-box;
+}
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+
+	font-weight: 400;
+}
+ul,
+ol {
+	list-style: none;
+}
+img {
+	display: block;
+}
+button,
+input,
+textarea {
+	margin: 0;
+	padding: 0;
+
+	border: 0;
+	background: none;
+	outline: none;
+}
+button {
+	cursor: pointer;
+}
+a {
+	text-decoration: none;
+}
+img {
+	display: block;
+	object-fit: cover;
+}
+
+// main styles
+body {
+	margin: 0;
+
+	background: $txMain;
+
+	font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen", "Segoe UI", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	color: $txMain;
+}
+
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+input,
+textarea {
+	font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Oxygen", "Segoe UI", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+// common styles
+.container {
+	margin: 0 auto;
+	padding: 0 15px;
+
+	max-width: 1440px;
+}
+
+@keyframes shaking {
+	0% {
+		transform: translateX(0px);
+	}
+
+	30% {
+		transform: translateX(15px);
+	}
+
+	50% {
+		transform: translateX(0px);
+	}
+
+	70% {
+		transform: translateX(5px);
+	}
+
+	100% {
+		transform: translateX(0px);
+	}
+}
